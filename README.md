@@ -23,7 +23,7 @@ curl -fsSL https://get.movp.dev/install.sh | sh
 ### Mac (Homebrew)
 
 ```bash
-brew tap movp/tap && brew install movp
+brew tap MostViableProduct/movp && brew install movp
 ```
 
 ### Windows (PowerShell)
