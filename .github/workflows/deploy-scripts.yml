@@ -1,0 +1,26 @@
+name: Deploy install scripts to get.movp.dev
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy scripts/ --project-name movp-install --commit-dirty=true

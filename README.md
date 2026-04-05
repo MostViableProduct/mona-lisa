@@ -87,6 +87,26 @@ codex --plugin-dir ~/.movp/plugins/codex-plugin
 
 ---
 
+## Verify installation
+
+Confirm the plugin directories are present before loading:
+
+**macOS / Linux**
+
+```bash
+ls ~/.movp/plugins/
+```
+
+**Windows**
+
+```cmd
+dir %USERPROFILE%\.movp\plugins
+```
+
+You should see `claude-plugin`, `codex-plugin`, and `cursor-plugin` directories. Homebrew installs to `$(brew --prefix)/share/movp/` instead.
+
+---
+
 ## What you get
 
 ### Slash commands (Claude Code)
