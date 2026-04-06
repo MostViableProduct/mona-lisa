@@ -8,7 +8,7 @@ set -euo pipefail
 MOVP_VERSION="${MOVP_VERSION:-}"
 MOVP_INSTALL_DIR="${MOVP_INSTALL_DIR:-$HOME/.movp/plugins}"
 MOVP_TOOL="${MOVP_TOOL:-}"
-MOVP_REPO="https://github.com/MostViableProduct/mona-lisa"
+MOVP_REPO="https://github.com/MostViableProduct/movp-plugins"
 
 # Parse flags
 while [[ $# -gt 0 ]]; do

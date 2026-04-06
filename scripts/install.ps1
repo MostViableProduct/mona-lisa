@@ -12,7 +12,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$Repo = "https://github.com/MostViableProduct/mona-lisa"
+$Repo = "https://github.com/MostViableProduct/movp-plugins"
 
 Write-Host "Installing MoVP plugins$(if ($Version) { " ($Version)" })..." -ForegroundColor White
 

@@ -4,6 +4,6 @@
   "description": "MoVP control plane — adversarial review, health scores, recommendations, and constraint checks via MCP",
   "skills": "./skills/",
   "author": { "name": "MoVP" },
-  "repository": "https://github.com/MostViableProduct/mona-lisa",
+  "repository": "https://github.com/MostViableProduct/movp-plugins",
   "license": "MIT"
 }

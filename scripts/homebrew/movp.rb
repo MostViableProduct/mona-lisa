@@ -1,8 +1,8 @@
 class Movp < Formula
   desc "MoVP control plane plugins for AI coding tools"
-  homepage "https://github.com/MostViableProduct/mona-lisa"
-  url "https://github.com/MostViableProduct/mona-lisa/archive/v1.0.0.tar.gz"
-  sha256 "7465db6fb7b7f3ca2a8198abe958a2e1232146d09f2ae022e60cbeaeb0584e01"
+  homepage "https://github.com/MostViableProduct/movp-plugins"
+  url "https://github.com/MostViableProduct/movp-plugins/archive/v1.0.0.tar.gz"
+  sha256 "e50a48d4f0d214099777b1834f9f77698a2a9066884ba104d92883439da0a996"
   license "MIT"
 
   depends_on "node@18"
@@ -77,7 +77,7 @@ class Movp < Formula
         movp cursor
         movp codex
 
-      Full docs: https://github.com/MostViableProduct/mona-lisa
+      Full docs: https://github.com/MostViableProduct/movp-plugins
     EOS
   end
 

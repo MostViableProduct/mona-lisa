@@ -2,7 +2,7 @@
 
 MoVP gives your AI coding tools a control plane — adversarial code reviews, health scores, cost tracking, and recommendations. Install the plugin for your tool and connect to your MoVP backend.
 
-Backend and CLI live in [Big Wave](https://github.com/MostViableProduct/big-wave).
+Backend and CLI are available separately — contact us or check your MoVP account for access.
 
 ---
 
@@ -134,7 +134,7 @@ You should see `claude-plugin`, `codex-plugin`, and `cursor-plugin` directories.
 ## Prerequisites
 
 - **Node.js 18+** — [nodejs.org](https://nodejs.org)
-- **A MoVP backend** — cloud or self-hosted (see [Big Wave](https://github.com/MostViableProduct/big-wave))
+- **A MoVP backend** — cloud or self-hosted
 - **One of:** Claude Code, Cursor 2.5+, or Codex
 
 ---
@@ -196,7 +196,7 @@ Skills rely on the model matching their `description` field. If `movp-control-pl
 - Run `npx @movp/cli status` or inspect `.mcp.json.example` for the expected path shape
 
 **Plugin commands not appearing**
-- Verify `--plugin-dir` points to a plugin subdirectory (`claude-plugin/`), not the mona-lisa repo root
+- Verify `--plugin-dir` points to a plugin subdirectory (`claude-plugin/`), not the plugins repo root
 
 ---
 

@@ -1,6 +1,6 @@
-# Contributing to mona-lisa
+# Contributing to MoVP Plugins
 
-Mona Lisa is the source of truth for MoVP agent files — the plugin harnesses for Claude Code, Codex, and Cursor. The MoVP backend and CLI live in [Big Wave](https://github.com/MostViableProduct/big-wave).
+This repository is the source of truth for MoVP agent files — the plugin harnesses for Claude Code, Codex, and Cursor. The MoVP backend and CLI are available separately.
 
 ---
 
