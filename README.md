@@ -77,7 +77,7 @@ Register the MoVP marketplace once in `~/.claude/settings.json` (or in your proj
     "movp": {
       "source": {
         "source": "github",
-        "repo": "MostViableProduct/mona-lisa"
+        "repo": "MostViableProduct/movp-plugins"
       }
     }
   },
