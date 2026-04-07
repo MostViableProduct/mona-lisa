@@ -67,11 +67,41 @@ This sets up the MCP server connection and telemetry hooks. You'll be prompted t
 
 ## Load the plugin
 
-### Claude Code
+### Claude Code (marketplace — recommended)
+
+Register the MoVP marketplace once in `~/.claude/settings.json` (or in your project's `.claude/settings.json` for team rollout):
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "movp": {
+      "source": {
+        "source": "github",
+        "repo": "MostViableProduct/mona-lisa"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "movp@movp": true
+  }
+}
+```
+
+Then just run `claude` — no flags needed. To update after a new release:
+
+```
+/plugin marketplace update
+```
+
+**Name alignment:** the `extraKnownMarketplaces` key (`movp`), the marketplace `name`, and the `enabledPlugins` key (`movp@movp`) must all stay in sync.
+
+### Claude Code (manual, one-off)
 
 ```bash
 claude --plugin-dir ~/.movp/plugins/claude-plugin
 ```
+
+> **Homebrew users**: `movp claude` instead of the `--plugin-dir` flag above.
 
 ### Cursor
 
@@ -85,7 +115,7 @@ cursor --plugin-dir ~/.movp/plugins/cursor-plugin
 codex --plugin-dir ~/.movp/plugins/codex-plugin
 ```
 
-> **Homebrew users**: use `movp claude`, `movp cursor`, or `movp codex` instead of the `--plugin-dir` flags above.
+> **Homebrew users**: use `movp cursor` or `movp codex` instead of the `--plugin-dir` flags above.
 
 ---
 
