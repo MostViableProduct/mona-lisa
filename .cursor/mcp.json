@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "movp": {
+      "args": [
+        "-y",
+        "@movp/mcp-server"
+      ],
+      "command": "npx",
+      "env": {
+        "MOVP_API_KEY": "wdg_95fad1e3dac46a6bb007fa53bd5a07a75e7471d0394654cb1c1bfa01d9a7fcff",
+        "MOVP_TENANT": "30fed0fa-a864-4d67-ab1d-b209b11cabaf",
+        "MOVP_URL": "https://host.mostviableproduct.com"
+      }
+    }
+  }
+}
