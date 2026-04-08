@@ -28,7 +28,10 @@ Control Plane
   Show recommendations:   <yes/no>
 ```
 
-If the config resource returns an error, show the error and note that the user should run `npx @movp/cli init` to configure MoVP.
+If the config resource returns an error, show the error and note:
+- If credentials are missing (no MOVP_API_KEY / MOVP_URL): "run `npx @movp/cli login` to authenticate"
+- If full setup is needed: "run `npx @movp/cli init` to configure MoVP globally"
+- If only project config is missing: "MoVP will auto-create .movp/config.yaml on the next request — or check directory permissions if this persists"
 
 If WORKDESK_SERVICE_URL or WORKDESK_TENANT environment variables are not set, note that the MCP server is not fully configured.
 
