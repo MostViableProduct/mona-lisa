@@ -3,14 +3,21 @@ description: "Show MoVP connection and configuration status"
 ---
 Read the MoVP effective config by accessing the `movp://movp/config` MCP resource, then present a clean status summary.
 
+If the config contains a `version_warning` field, show it prominently at the very top before any sections.
+
 Format the output as follows:
 
 ```
 [MoVP] Status
 
+<if version_warning is present, show: "WARNING: <version_warning>" on its own line here>
+
 Connection
   Workdesk:  <WORKDESK_SERVICE_URL or "not configured">
   Tenant:    <tenant ID from WORKDESK_TENANT or "not configured">
+
+Settings
+  URL:  <settings_url or "not available">
 
 Review Config
   Enabled:        <yes/no>
@@ -26,6 +33,11 @@ Control Plane
   Health check interval:  <N>s
   Show cost:              <yes/no>
   Show recommendations:   <yes/no>
+
+MCP Version
+  Installed:  <mcp_installed_version or "unknown">
+  Pinned:     <mcp_pinned_version or "not checked">
+  Status:     <if version_warning is present, show the warning text; otherwise "OK">
 ```
 
 If the config resource returns an error, show the error and note:
